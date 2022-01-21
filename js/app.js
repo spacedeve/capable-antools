@@ -16,3 +16,25 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+//Active
+
+let itemContainer = document.getElementById('grid-box__list');
+let items = itemContainer.getElementsByClassName('grid-box__item');
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
+    this.className += " active";
+  });
+}
+
+//Heart

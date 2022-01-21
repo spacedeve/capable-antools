@@ -254,7 +254,9 @@ a {
   gap: 30px;
 }
 
-.popular {}
+.popular {
+  margin-bottom: 200px;
+}
 
 .popular__inner {
   display: flex;
@@ -281,4 +283,129 @@ a {
   line-height: 30px;
   max-width: 427px;
   margin: 0 auto
+}
+
+.popular__grid-box {
+  margin-bottom: 100px;
+}
+
+.grid-box__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 120px;
+}
+
+.grid-box__item {
+  max-width: 392px;
+  padding: 33px;
+  transition: all .4s ease-in-out;
+}
+
+.grid-box__top {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.grid-box__icon-name {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+
+.grid-box__top-text span {
+  color: rgba(255, 165, 55, 0.55);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: capitalize;
+}
+
+.grid-box__text {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.grid-box__bottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.heart {
+  padding: 8px;
+  background: #283036;
+  box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+  border-radius: 8px;
+}
+
+.heart svg {
+  fill: #fd3b41;
+}
+
+.grid-box__bottom-link {
+  margin-left: auto;
+  padding: 9px 35px;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.active {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  background: rgba(40, 48, 54, 0.6);
+  backdrop-filter: blur(50px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 15px;
+}
+
+.active a {
+  color: #fff;
+  background-color: #ff6e30;
+  border-radius: 8px;
+  padding: 9px 35px;
+  transition: all .4s ease-in-out;
+}
+
+.popular__button {
+  display: block;
+  margin: 0 auto;
+  padding: 17px 38px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ff6e30;
+}
+
+.brand {
+  margin-bottom: 200px;
+}
+
+.brand__inner {
+  background: rgba(44, 53, 61, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 25px;
+  padding: 55px 82px;
+}
+
+.brand__title {
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.brand__list {
+  display: flex;
+  justify-content: space-between;
 }
