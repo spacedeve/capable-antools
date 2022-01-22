@@ -63,6 +63,10 @@ a {
   text-decoration: none;
 }
 
+svg {
+  cursor: pointer;
+}
+
 .body {
   background-color: #1e252b;
   font-family: 'Poppins';
@@ -408,4 +412,250 @@ a {
 .brand__list {
   display: flex;
   justify-content: space-between;
+}
+
+.newcomer {
+  margin-bottom: 200px;
+}
+
+.newcomer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newcomer__title {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 48px;
+  line-height: 62px;
+  margin-bottom: 30px;
+}
+
+.newcomer__text {
+  max-width: 427px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
+.newcomer__link {
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 40px;
+  background: #ff6e30;
+  border-radius: 8px;
+}
+
+.newcomer__link:hover {
+  background-color: #fa8b5b;
+}
+
+.newcomer__grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 50px;
+}
+
+.newcomer__item {
+  max-width: 288px;
+  padding: 28px 22px;
+  transition: all .4s ease-in-out;
+}
+
+.newcomer__top {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.newcomer__top-text {
+  text-transform: capitalize;
+}
+
+.newcomer__icon-name {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.newcomer__top-text span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(255, 165, 55, 0.55);
+}
+
+.newcomer__grid-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 30px;
+}
+
+.newcomer__bottom {
+  display: flex;
+  gap: 12px;
+}
+
+.newcomer__bottom-link {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Slider */
+.blog-slider__container {
+  max-width: 80%;
+  position: relative;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.testimonial {
+  margin-bottom: 250px;
+}
+
+.testimonial__slider {
+  margin-bottom: 210px;
+}
+
+.blogSlides img {
+  object-fit: cover;
+  width: 392px;
+}
+
+.testimonial__box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonial__person {
+  position: relative;
+}
+
+.person {
+  position: absolute;
+  bottom: 31px;
+  right: -18px;
+  padding: 10px 22px;
+  background: rgba(40, 48, 54, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 8px;
+}
+
+.testimonial__person-name {
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 0.015em;
+  color: rgba(255, 253, 253, 0.78);
+}
+
+.testimonial__person-position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 253, 253, 0.55);
+}
+
+.testimonial__text {
+  max-width: 393px;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  color: #ff6e30;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+
+.blogSlider__dots {
+  text-align: center;
+}
+
+.blogSlider__dots--dot {
+  cursor: pointer;
+  height: 6px;
+  width: 44px;
+  margin: 0 9px;
+  background-color: #bbb;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.current,
+.blogSlider__dots--dot:hover {
+  background-color: #ff6e30;
+}
+
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.join__email {
+  width: 260px;
 }
