@@ -93,3 +93,10 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " current";
 }
+
+
+// Current date
+
+let date = new Date();
+let currentYear = date.getFullYear();
+document.getElementById('date').innerHTML = currentYear;
